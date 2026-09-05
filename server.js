@@ -3,7 +3,6 @@ const Alexa = require('ask-sdk-core');
 const { ExpressAdapter } = require('ask-sdk-express-adapter');
 
 const app = express();
-app.use(express.json());
 
 // Estado compartilhado entre a Alexa e o Aiden
 let estadoAiden = { emocao: "normal" };
