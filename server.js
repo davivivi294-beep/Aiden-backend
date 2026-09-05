@@ -58,7 +58,8 @@ const MudarEmocaoIntentHandler = {
     const emocao = Alexa.getSlotValue(handlerInput.requestEnvelope, 'emocao') || 'normal';
     estadoAiden.emocao = emocao;
     return handlerInput.responseBuilder
-      .speak(`Beleza, ficando ${emocao}.`)
+      .speak(`Beleza, ficando ${emocao}. Mais alguma coisa?`)
+      .reprompt('Pode falar.')
       .getResponse();
   }
 };
